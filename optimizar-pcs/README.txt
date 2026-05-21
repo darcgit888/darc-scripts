@@ -123,6 +123,36 @@
   README.txt                   ← Este archivo de instrucciones
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  INSTALAR SFLOW (APP DE VOZ A TEXTO DE DIEGO)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  SFlow es una app que convierte tu voz en texto y lo pega
+  donde estes escribiendo. Desarrollada por Diego Rivero.
+
+  DESCARGAR EL INSTALADOR:
+  1. Abre el navegador y ve a:
+     github.com/darcgit888/darc-scripts/releases
+
+  2. Clic en la version mas reciente (la de arriba).
+
+  3. Busca el archivo "SFlow_v7.5.0_Setup.exe" y dale clic
+     para descargarlo.
+
+  INSTALAR:
+  4. Doble clic en el archivo descargado.
+  5. Seguir el asistente de instalacion (clic "Siguiente"
+     hasta que termine).
+  6. SFlow aparece en la bandeja del sistema (abajo a la
+     derecha, junto al reloj).
+
+  COMO SE USA:
+  - Manten Ctrl+Shift → habla → suelta → el texto aparece
+  - O da doble clic en Ctrl → habla → un clic en Ctrl para parar
+
+  NOTA: SFlow esta PROTEGIDO en el script de optimizacion.
+  Nunca se va a quitar del arranque automatico.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   ACTUALIZACIONES FUTURAS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 

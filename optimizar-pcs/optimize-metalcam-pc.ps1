@@ -68,10 +68,12 @@ function Apply-Nivel1 {
     Write-Step "Desactivando apps de inicio innecesarias (Skype, Teams personal, Spotify, etc.)"
     $appsAQuitar = @("Skype", "Teams", "Spotify", "Discord", "Steam", "Adobe Updater")
     foreach ($app in $appsAQuitar) {
-        Remove-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Run" -Name $app -ErrorAction SilentlyContinue
-        Remove-ItemProperty -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Run" -Name $app -ErrorAction SilentlyContinue
+        if ($appsProtegidas -notcontains $app) {
+            Remove-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Run" -Name $app -ErrorAction SilentlyContinue
+            Remove-ItemProperty -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Run" -Name $app -ErrorAction SilentlyContinue
+        }
     }
-    Write-Done "Apps de arranque limpias"
+    Write-Done "Apps de arranque limpias (SFlow protegido)"
 
     # 5. Desactivar Notificaciones de Focus Assist y telemetría básica
     Write-Step "Desactivando notificaciones intrusivas"
@@ -85,6 +87,9 @@ function Apply-Nivel1 {
 # ========== NIVEL 2: SERVICIOS WINDOWS INNECESARIOS ==========
 function Apply-Nivel2 {
     Write-Title "NIVEL 2 - Servicios de Windows innecesarios"
+
+    # Apps protegidas — NUNCA quitar del startup aunque estén en la lista negra
+    $appsProtegidas = @("SFlow", "sflow", "SFLOW")
 
     # Lista de servicios a desactivar (NO toca Bluetooth — Metalcam si lo usa)
     $serviciosADesactivar = @{
