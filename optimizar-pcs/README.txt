@@ -1,52 +1,114 @@
 ============================================================
   OPTIMIZADOR DE PCs - METALCAM
-  Politica completa: docs/HERRAMIENTAS.md
+  Para cualquier persona, sin conocimientos tecnicos
 ============================================================
 
-DESCARGAR LOS ARCHIVOS:
-  Ir a este link y descargar el ZIP:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  PASO 1: DESCARGAR LOS ARCHIVOS DE INTERNET
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-    https://github.com/darcgit888/metalcam/tree/master/scripts/optimizar-pcs
+  1. Abre tu navegador (Edge, Chrome, Vivaldi, cualquiera)
 
-  En la pagina de GitHub, click en el boton verde "Code" arriba
-  a la derecha, luego "Download ZIP". Extraer el ZIP en cualquier
-  carpeta (Escritorio o Descargas estan bien).
+  2. Escribe esta direccion en la barra de arriba y presiona Enter:
+     github.com/darcgit888/darc-scripts
 
-QUE ES:
-  Script que optimiza una PC Windows para usuarios de Metalcam.
-  Libera RAM, desactiva apps innecesarias, configura el navegador
-  Edge para uso eficiente con Google Drive y Workspace.
+  3. Se abre una pagina (es GitHub, una pagina para guardar
+     archivos de programas. Es normal que se vea tecnica).
 
-COMO SE USA:
-  1. Doble click en "optimizar-metalcam.bat"
-  2. Windows pedira permiso de administrador. Da "Si".
-  3. Elige el nivel a aplicar:
-       1 - Basico (cambios suaves, sin riesgo)
-       2 - + Servicios Windows innecesarios
-       3 - + Limpieza profunda (quita Skype, Xbox, etc.)
-       4 - + Configuracion Edge optimizada
-       5 - TODO (recomendado para PCs viejas)
-  4. Espera 3-5 minutos.
-  5. Reinicia la PC para aplicar todos los cambios.
+  4. Busca el boton verde que dice "< > Code" arriba a la derecha.
+     Dale clic.
 
-POR PERFIL DE PC:
-  PC nueva (16GB+):              Nivel 1 o 2
-  PC media (8GB):                Nivel 1, 2 o 3
-  PC vieja (4-6GB):              Nivel 5 (todo)
-  PC de personal vigilado:       Nivel 5 (todo)
+  5. Se abre un menu pequeno. Clic en "Download ZIP".
 
-SI ALGO NO FUNCIONA:
-  El script es idempotente — se puede correr varias veces sin
-  romper nada.
+  6. Se descarga un archivo llamado "darc-scripts-main.zip"
+     (puede que pregunte donde guardarlo - guarda en Descargas).
 
-  Si un servicio que necesitas quedo desactivado:
-    1. Abre PowerShell como admin
-    2. Ejecuta: Set-Service -Name "NombreServicio" -StartupType Automatic
-    3. Ejemplo: Set-Service -Name "Spooler" -StartupType Automatic
+  7. Ve a tu carpeta Descargas.
 
-EDITAR EL SCRIPT:
-  Abre "optimize-metalcam-pc.ps1" en VS Code o Notepad.
-  Es texto plano. Cualquier mejora se hace ahi y se vuelve
-  a correr en las PCs.
+  8. Clic derecho sobre "darc-scripts-main.zip" y
+     selecciona "Extraer todo..." → Clic en "Extraer".
 
-VERSION: 2026-05-21
+  9. Se crea una carpeta "darc-scripts-main". Abrela.
+     Luego abre la carpeta "optimizar-pcs" que esta adentro.
+
+  Ya tienes los archivos listos.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  PASO 2: OPTIMIZAR LA PC (HACERLA MAS RAPIDA)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  1. Dentro de la carpeta "optimizar-pcs", busca el archivo:
+        optimizar-metalcam.bat
+
+  2. Doble clic sobre ese archivo.
+
+  3. Windows pregunta: "Deseas permitir que esta aplicacion
+     haga cambios en el dispositivo?" → Clic en "Si".
+
+  4. Se abre una ventana negra (normal, no es un virus).
+
+  5. Pregunta el nivel (1 al 5):
+       - PC nueva (menos de 2 anos)       → escribe 2
+       - PC normal (2 a 5 anos)           → escribe 3
+       - PC lenta o vieja (+5 anos)       → escribe 5
+
+  6. Presiona Enter y espera 3-5 minutos.
+     Cuando diga "OPTIMIZACION COMPLETA" presiona Enter.
+
+  7. REINICIA la PC. Los cambios aplican al reiniciar.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  PASO 3: SI ALGO NO FUNCIONA DESPUES (REVERTIR)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Si despues de optimizar algo dejo de funcionar, se puede
+  deshacer todo:
+
+  1. En la misma carpeta "optimizar-pcs", busca el archivo:
+        revertir.bat
+
+  2. Doble clic → "Si" al permiso de administrador.
+
+  3. Escribe "SI" (en mayusculas) cuando lo pida y presiona Enter.
+
+  4. Espera 2-3 minutos. Cuando termine, presiona Enter.
+
+  5. REINICIA la PC. Todo regresa a como estaba antes.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  LO QUE NO SE PUEDE REVERTIR AUTOMATICAMENTE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Con nivel 3 o 5 se eliminan apps como Skype, Xbox y
+  Solitaire. Estas no se recuperan solas pero se pueden
+  reinstalar desde la Tienda de Microsoft si alguien las
+  necesita (casi nadie en Metalcam las usa).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ARCHIVOS EN ESTA CARPETA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  optimizar-metalcam.bat       ← Doble clic para OPTIMIZAR
+  optimize-metalcam-pc.ps1     ← Motor del optimizador (no tocar)
+  revertir.bat                 ← Doble clic para REVERTIR
+  revertir-metalcam-pc.ps1     ← Motor del revertidor (no tocar)
+  README.txt                   ← Este archivo de instrucciones
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ACTUALIZACIONES FUTURAS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Si hay una version mejorada, simplemente repite el Paso 1
+  (descargar de nuevo desde el mismo link) y corre el archivo
+  .bat otra vez. Es seguro correrlo varias veces en la misma PC.
+
+  Siempre descargar de:
+  github.com/darcgit888/darc-scripts
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  DUDAS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Cualquier problema contactar a Diego Rivero.
+
+  VERSION: 2026-05-21
