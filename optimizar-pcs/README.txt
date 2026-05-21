@@ -130,13 +130,12 @@
   donde estes escribiendo. Desarrollada por Diego Rivero.
 
   DESCARGAR EL INSTALADOR:
-  1. Abre el navegador y ve a:
-     github.com/darcgit888/darc-scripts/releases
+  1. Abre Google Drive con tu cuenta @grupometalcam.com
 
-  2. Clic en la version mas reciente (la de arriba).
+  2. Ve a: Unidades compartidas → Programas Metalcam → Public
 
-  3. Busca el archivo "SFlow_v7.5.0_Setup.exe" y dale clic
-     para descargarlo.
+  3. Busca el archivo "SFlow_v7.5.0_Setup.exe" y dale doble
+     clic para descargarlo (o clic derecho → Descargar).
 
   INSTALAR:
   4. Doble clic en el archivo descargado.
