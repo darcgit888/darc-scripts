@@ -76,6 +76,34 @@
   5. REINICIA la PC. Todo regresa a como estaba antes.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  PASO 4: VERIFICAR QUE TODO FUNCIONA (DESPUES DE REINICIAR)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Despues de reiniciar, revisa estas cosas una por una.
+  Si algo falla, ve al Paso 3 (revertir).
+
+  [ ] 1. INTERNET: Abrir el navegador y entrar a google.com
+          Si no carga → reportar a Diego
+
+  [ ] 2. IMPRESORA: Abrir un documento cualquiera y dar
+          "Imprimir". Ver que aparece la impresora de red.
+          Si no aparece → reportar a Diego
+          NOTA: Metalcam tiene 3 impresoras WiFi en red,
+          el script NO las toca. Si hay problema es otro motivo.
+
+  [ ] 3. GOOGLE DRIVE: Verificar que el icono de Drive este
+          en la barra de abajo (la bandeja del sistema).
+          Abrir una carpeta y ver que los archivos esten.
+
+  [ ] 4. GMAIL / CORREO: Abrir el navegador, entrar a gmail.com
+          y verificar que carga el correo normalmente.
+
+  [ ] 5. VELOCIDAD: La PC debe sentirse MAS rapida, no mas lenta.
+          Si se siente igual o peor, reportar a Diego.
+
+  Si todo lo anterior funciona → la optimizacion fue exitosa.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   LO QUE NO SE PUEDE REVERTIR AUTOMATICAMENTE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 

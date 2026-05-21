@@ -115,17 +115,8 @@ function Apply-Nivel2 {
     }
 
     # Print Spooler condicional: solo apagar si NO hay impresoras configuradas
-    Write-Step "Revisando Print Spooler (impresion)"
-    try {
-        $impresoras = Get-Printer -ErrorAction SilentlyContinue
-        if ($impresoras.Count -eq 0) {
-            Stop-Service -Name "Spooler" -Force -ErrorAction SilentlyContinue
-            Set-Service -Name "Spooler" -StartupType Disabled
-            Write-Done "Print Spooler desactivado (no hay impresoras)"
-        } else {
-            Write-Warn "Print Spooler activo (hay $($impresoras.Count) impresoras configuradas)"
-        }
-    } catch { Write-Warn "No se pudo revisar Print Spooler" }
+    # Print Spooler NUNCA se desactiva — Metalcam tiene 3 impresoras en red WiFi
+    Write-Done "Print Spooler: NO se toca (Metalcam tiene impresoras en red)"
 }
 
 # ========== NIVEL 3: LIMPIEZA PROFUNDA ==========
